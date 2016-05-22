@@ -1,0 +1,12 @@
+<!DOCTYPE html> <!-- ① -->
+<html xmlns:th="http://www.thymeleaf.org"> <!-- ② -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+<title th:text="${title}">Title</title> <!-- ③ -->
+</head>
+<body>
+	<h1 th:text="${title}">Title</h1>
+	<div th:text="${message}">Content</div> <!-- ④ -->
+	<div th:text="${#dates.format(date)}">Date time</div> <!-- ⑤ -->
+</body>
+</html>
